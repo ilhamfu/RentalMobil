@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "175447559843",
+    "firebase_url": "https://rental-mobil-dev.firebaseio.com",
+    "project_id": "rental-mobil-dev",
+    "storage_bucket": "rental-mobil-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175447559843:android:7ad48c1907a00a8dbaf916",
+        "android_client_info": {
+          "package_name": "com.hafidzts.rental_mobil.rental_mobil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175447559843-v6itrpb3ugbsc7nudvenlmvurtmra1li.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hafidzts.rental_mobil.rental_mobil",
+            "certificate_hash": "f457bb8c87f86579c02329c3b910181c238cec2d"
+          }
+        },
+        {
+          "client_id": "175447559843-vhs8mga7r1tdu30nllcmno5hbl42kk07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOZhirC-BNJ4MAkjp0k4ipfI0aIupUrTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175447559843-vhs8mga7r1tdu30nllcmno5hbl42kk07.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
