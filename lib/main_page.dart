@@ -65,7 +65,15 @@ class _MainPageState extends State<MainPage> {
                 style: TextStyle(color: Colors.white),
               ))
         ],
-        leading: Icon(Icons.ac_unit),
+        leading: Center(
+            child: Container(
+              
+          child: Image.asset("assets/logo.png"),
+          decoration: BoxDecoration(color: Colors.white,shape: BoxShape.circle),
+          padding: EdgeInsets.all(5),
+          height: 40,
+          width: 40,
+        )),
         centerTitle: true,
       ),
       body: MainPageBody(user: user, handleSignIn: _handleSignIn),

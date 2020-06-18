@@ -42,7 +42,7 @@ class DetailPageBody extends StatelessWidget {
 }
 
 class SecondPage extends StatefulWidget {
-  final Map<String,dynamic> payload;
+  final Map<String, dynamic> payload;
   SecondPage({Key key, this.payload}) : super(key: key);
   @override
   _SecondPageState createState() => _SecondPageState();
@@ -177,7 +177,13 @@ class _RentDetailWidget extends StatelessWidget {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("Logo"),
+                    Center(
+                      child: Image.asset(
+                        "assets/logo.png",
+                        height: 40,
+                        width: 40,
+                      ),
+                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
@@ -223,7 +229,7 @@ class _RentDetailWidget extends StatelessWidget {
                     CachedNetworkImage(
                         height: 120,
                         width: 120,
-                        imageUrl: data["gambar"]??"",
+                        imageUrl: data["gambar"] ?? "",
                         placeholder: (context, url) => Container(
                               width: 120,
                               height: 120,
@@ -371,8 +377,13 @@ class _SecondPageState extends State<SecondPage> {
       await Firestore.instance
           .collection("mobil")
           .document((widget.payload["data"] as DocumentSnapshot)?.documentID)
-          .setData({"tersedia": false,"user":(widget.payload["user"] as FirebaseUser)?.uid,"tanggal_sewa":startDate,"tanggal_kembali":endDate}, merge: true);
-          
+          .setData({
+        "tersedia": false,
+        "user": (widget.payload["user"] as FirebaseUser)?.uid,
+        "tanggal_sewa": startDate,
+        "tanggal_kembali": endDate
+      }, merge: true);
+
       Navigator.of(context).pop(true);
     } catch (e) {
       Navigator.of(context).pop(false);

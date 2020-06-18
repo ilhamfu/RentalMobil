@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "175447559843-36nhi4nmrrob0p6ffs8f0o8714becs2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hafidzts.rental_mobil.rental_mobil",
+            "certificate_hash": "3d538c05c37acf9e36be8c76085b90e0483a750b"
+          }
+        },
+        {
           "client_id": "175447559843-v6itrpb3ugbsc7nudvenlmvurtmra1li.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
